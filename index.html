@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Learn MM</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #858594;
+            color: #000000;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #6200ea;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+        .video-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .video-description {
+            max-width: 400px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-media {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #6200ea;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+        }
+        .payment-section {
+            margin-top: 20px;
+        }
+        .payment-section button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #6200ea;
+            color: white;
+        }
+        .payment-section button:hover {
+            background-color: #3700b3;
+        }
+        .payment-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .payment-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IT Learn MM</h1>
+    </header>
+
+    <div class="container">
+        <form id="profileForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Create Profile</button>
+        </form>
+
+        <h2>Select Profile to Enroll</h2>
+        <select id="profileSelect" required>
+            <option value="">Select a profile</option>
+        </select>
+        <button id="enrollButton">Enroll in Course</button>
+
+        <div id="paymentSection" class="payment-section">
+            <h2>Pay to Access Video</h2>
+            <p>Please pay 50,000 MMK via Wave Money or KBZ Pay to access the video.</p>
+            <div class="payment-icons">
+                <img src="https://assets.onecompiler.app/437uxw29r/43atz5jyr/download.jpg" alt="KBZ Pay">
+                <p> 09740934466</p>
+                <img src="https://assets.onecompiler.app/437uxw29r/43atz5jyr/download%20(1).jpg" alt="Wave Money">
+                <p> 09740934466</p>
+            </div>
+
+            
+            <button id="payButton">I have paid</button>
+        </div>
+
+        <div id="videoSection" style="display: none;">
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1ylEDpujHoeNsGAAhLn2RSf1WFbgSwlcv/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+            <div class="video-description">
+                <h2>Course Video</h2>
+                <p>(မြန်မာလို သေချာ ရှင်းပြထားသည်)</p>
+                <p>ဤဗီဒီယိုတွင် သင်ခန်းစာများကို အသေးစိတ် ရှင်းလင်းပြသထားပါသည်။ ဗီဒီယိုကို ကြည့်ရှုပြီး သင်ယူနိုင်ပါသည်။ ဗီဒီယိုကို download မလုပ်နိုင်ပါ။</p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://fakefacebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://fakelinkedin.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://fakex.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+            </a>
+            <a href="https://fakeyoutube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
+            </a>
+            <a href="https://fakeinstagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2025 - Kyaw Htet.
+    </footer>
+
+    <script>
+        let profiles = [];
+        let selectedProfile = null;
+
+        document.getElementById('profileForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const newProfile = { id: profiles.length + 1, name, email };
+            profiles.push(newProfile);
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+
+            const select = document.getElementById('profileSelect');
+            const option = document.createElement('option');
+            option.value = newProfile.id;
+            option.textContent = newProfile.name;
+            select.appendChild(option);
+        });
+
+        document.getElementById('profileSelect').addEventListener('change', function(e) {
+            selectedProfile = e.target.value;
+        });
+
+        document.getElementById('enrollButton').addEventListener('click', function() {
+            if (selectedProfile) {
+                const profile = profiles.find(p => p.id === parseInt(selectedProfile));
+                if (profile) {
+                    alert(`Enrolling: ${profile.name} in the IT Learn MM course`);
+                    // Here you would typically handle the enrollment logic, such as calling an API
+                }
+            } else {
+                alert('Please select a profile to enroll.');
+            }
+        });
+
+        document.getElementById('payButton').addEventListener('click', async function() {
+            const transactionId = prompt('Please enter your transaction ID:');
+            if (transactionId) {
+                const response = await fetch('/verify-payment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        transactionId: transactionId,
+                    }),
+                });
+                const { success } = await response.json();
+
+                if (success) {
+                    alert('Payment verified! You can now access the video.');
+                    document.getElementById('paymentSection').style.display = 'none';
+                    document.getElementById('videoSection').style.display = 'block';
+                } else {
+                    alert('Payment verification failed. Please try again.');
+                }
+            } else {
+                alert('Please enter a valid transaction ID.');
+            }
+        });
+
+        // Prevent video download
+        document.querySelector('iframe').addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
